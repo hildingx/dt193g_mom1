@@ -18,17 +18,27 @@
         </nav>
     </header>
 
-    <main>
+    <main class="publish">
         <h1>
-            Information om uppgiften
+            Azure Static Web Apps
         </h1>
         <p>
-            Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
-            Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), kostnad, för- och nackdelar och andra saker du tycker är utmärkande.
-            Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.
+            Har publicerat via Azure Static Web Apps (ASWA), och det är första gången jag använder plattformen.
+            Det är en tjänst från Microsoft Azure som är utvecklad för att hosta statiska webbplatser, och frontend-appar som är byggad med HTML, CSS och JavaScript, eller appar med ramverk som React, Vue och Angular.
+            För backend-funktionalitet stödjs dessutom fler språk som TS, Python, C# och Java, genom Azure Functions.
         </p>
         <p>
-
+            Priset varierar beroende på vad man är i behov av. Men det finns en gratisnivå, standardnivå (9$/mån) samt en dedicated-nivå (99$/mån).
+        </p>
+        <p>
+            Hyfsat enkelt att deploya. Har blivit väldigt van vid Netlify, så det här var en nyttig lärdom. Sidan uppdateras med GitHub Actions varje gång man gör en commit.
+            Det finns stöd för serverlösa API-funktioner (med Azure Functions).
+            Distribuering sker via Azures CDN, vilket (som jag förstått det) ger en bra laddningstid globalt.
+        </p>
+        <p>
+            Smidigt process. Skapade ett repo på Github. Därefter skapade jag ett konto på Azure och valde ASWA. Med hjälp av en learn-microsoft-guide kunde jag sedan integrera github-repot med en ASWA-resurs via Visual Studio Code.
+            Jättesmidigt. Det skapades då en GitHub Actions workflow-fil som tar hand om CI/CD, så varje gång jag gör en commit körs arbetsflödet, som bygger och publicerar webbplatsen.
+            I Azure-portalen finns sedan verktyg för att övervaka och hantera webbplatsen.
         </p>
     </main>
 
