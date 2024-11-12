@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse me-2 me-lg-0" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-end">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Startsida</a>
+                    </li>
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="#">Bootstrap</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="milligram.html">Milligram</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="publication.html">Publicering</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6 mx-auto mb-5">
+                        <h1 class="text-center mt-5 display-1">
+                            Bootstrap
+                        </h1>
+                        <div class="container my-4">
+                            <p class="lead">
+                                Bootstrap är ett gratis open source CSS-ramverk som används bland annat för att skapa responsiva och mobilvänliga webbsidor.
+                            </p>
+                            <p class="mb-3">
+                                Ramverket innehåller en mängd förbyggda komponenter som navigationsmenyer, knappar, formulär, tabeller och ikoner.<br>
+                                <a class="link-opacity-50-hover link-offset-3" href="https://getbootstrap.com/">Länk till Bootstrap-webbplatsen</a>.
+                            </p>
+                            <h5 class="mt-4">Fördelar</h5>
+                            <p class="mb-3">
+                                Jag tycker att ramverket är förhållandevis enkelt att komma igång med, och tillsammans med dokumentationen kommer man rätt långt.
+                                Det är förstås nytt att baka in komponenterna genom klassnamn som man behöver lära sig, men när man kommit igång så är det smidigt.
+                                Om man inte bryr sig om den "bootstrapiga" looken, kan man ha en webbsida uppe på nolltid med mycket stil. Det är inte lika "fippligt" som CSS; man behöver inte skruva så mycket, och mycket är förinställt.
+                                Väldigt smidigt att designen är responsiv "out of the box".
+                            </p>
+                        
+                            <h5 class="mt-4">Nackdelar</h5>
+                            <p>
+                                Man blir mer låst i designen, och det kan bli knixigt att göra en mer avancerad design. Man tappar lite av kontrollen över detaljer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto mb-5">
+                    <h2 class="text-center mb-4 mt-5 display-5">Djur med superkrafter</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" id="animalTable">
+                            <thead>
+                                <tr>
+                                    <th>Djur</th>
+                                    <th>Superkraft</th>
+                                    <th>Favoritmat</th>
+                                    <th>Hemmaplan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider" id="animalTableBody">
+                                <tr>
+                                    <td>Flygande Katt</td>
+                                    <td>Osynlighet</td>
+                                    <td>Grillad fisk</td>
+                                    <td>Mystikens Skog</td>
+                                </tr>
+                                <tr>
+                                    <td>Eldsprutande Drake</td>
+                                    <td>Tidshopp</td>
+                                    <td>Chilipeppar</td>
+                                    <td>Vulkanön</td>
+                                </tr>
+                                <tr>
+                                    <td>Dansande Räv</td>
+                                    <td>Hypnosdans</td>
+                                    <td>Blåbärspaj</td>
+                                    <td>Månskogsdalen</td>
+                                </tr>
+                                <tr>
+                                    <td>Sjungande Dromedar</td>
+                                    <td>Superröst</td>
+                                    <td>Kaktussmoothie</td>
+                                    <td>Ökens Oas</td>
+                                </tr>
+                                <tr>
+                                    <td>Snabb Sköldpadda</td>
+                                    <td>Supersnabbhet</td>
+                                    <td>Sallad</td>
+                                    <td>Havsbottens Palats</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                    <h2 class="text-center mb-4 display-5">Lägg till nytt djur</h2>
+                    <form id="animalForm" novalidate>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="animal" name="animal" class="form-control" placeholder="" required>
+                            <label for="animal">Djur</label>
+                            <div class="invalid-feedback">Ange ett djur</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="power" name="power" class="form-control" placeholder="" required>
+                            <label for="power">Superkraft</label>
+                            <div class="invalid-feedback">Ange en superkraft</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="favfood" name="favfood" class="form-control" placeholder="" required>
+                            <label for="favfood">Favoritmat</label>
+                            <div class="invalid-feedback">Ange favoritmat</div>
+                        </div>
+                        <div class="form-floating mb-3">    
+                            <input type="text" id="hometurf" name="hometurf" class="form-control" placeholder="" required>
+                            <label for="hometurf">Hemmaplan</label>
+                            <div class="invalid-feedback">Ange hemmaplan</div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Lägg till</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center mt-2">
+            <p>Alexander Hilding</p>
+        </div>
+    </footer>
+</body>
+</html>
